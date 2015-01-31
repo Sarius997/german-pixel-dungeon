@@ -6,6 +6,9 @@ Uebersetzung des roguelike Spiels von Watabou
 GooglePlay:
 noch nicht verfuegbar
 
+PD-Classes wird nicht mehr benoetigt.
+Es wurde direkt eingebaut.
+
 das Original:
 
 Pixel Dungeon
