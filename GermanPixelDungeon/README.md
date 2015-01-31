@@ -1,10 +1,10 @@
 German Pixel Dungeon
 ====================
 
-Übersetzung des roguelike Spiels von Watabou
+Uebersetzung des roguelike Spiels von Watabou
 
 GooglePlay:
-noch nicht verfügbar
+noch nicht verfuegbar
 
 das Original:
 
