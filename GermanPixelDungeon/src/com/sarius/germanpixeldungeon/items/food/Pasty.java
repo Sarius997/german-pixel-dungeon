@@ -23,14 +23,14 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class Pasty extends Food {
 
 	{
-		name = "pasty";
+		name = "Pastete";
 		image = ItemSpriteSheet.PASTY;
 		energy = Hunger.STARVING;
 	}
 	
 	@Override
 	public String info() {
-		return "This is authentic Cornish pasty with traditional filling of beef and potato.";
+		return "Dies ist eine original cornwallsche Pastete mit einer traditionellen Fuellung aus Fleisch und Kartoffeln.";
 	}
 	
 	@Override

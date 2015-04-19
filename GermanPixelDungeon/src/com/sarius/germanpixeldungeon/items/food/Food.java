@@ -36,10 +36,10 @@ public class Food extends Item {
 
 	private static final float TIME_TO_EAT	= 3f;
 	
-	public static final String AC_EAT	= "EAT";
+	public static final String AC_EAT	= "ESSEN";
 	
 	public float energy = Hunger.HUNGRY;
-	public String message = "That food tasted delicious!";
+	public String message = "Das Essen hat lecker geschmeckt!";
 	
 	{
 		stackable = true;
@@ -99,8 +99,8 @@ public class Food extends Item {
 	@Override
 	public String info() {
 		return 
-			"Nothing fancy here: dried meat, " +
-			"some biscuits - things like that.";
+			"Nichts besonderes: getrocknetes Fleisch, " +
+			"einige Kekse - solche Sachen.";
 	}
 	
 	@Override

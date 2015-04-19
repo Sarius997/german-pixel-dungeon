@@ -23,14 +23,14 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class ChargrilledMeat extends Food {
 
 	{
-		name = "chargrilled meat";
+		name = "gegrilltes Fleisch";
 		image = ItemSpriteSheet.STEAK;
 		energy = Hunger.STARVING - Hunger.HUNGRY;
 	}
 	
 	@Override
 	public String info() {
-		return "It looks like a decent steak.";
+		return "Es sieht wie ein anstaendiges Steak aus.";
 	}
 	
 	@Override
