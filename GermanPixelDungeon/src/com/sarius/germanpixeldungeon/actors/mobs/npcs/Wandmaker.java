@@ -65,27 +65,27 @@ import com.watabou.utils.Random;
 public class Wandmaker extends NPC {
 
 	{	
-		name = "old wandmaker";
+		name = "alter Zauberstabmacher";
 		spriteClass = WandmakerSprite.class;
 	}
 	
 	private static final String TXT_BERRY1	=
-		"Oh, what a pleasant surprise to meet a decent person in such place! I came here for a rare ingredient - " +
-		"a _Rotberry seed_. Being a magic user, I'm quite able to defend myself against local monsters, " +
-		"but I'm getting lost in no time, it's very embarrassing. Probably you could help me? I would be " +
-		"happy to pay for your service with one of my best wands.";
+		"Oh, was für eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
+		"einen _Rotberry Samen_. Ich als ein Magier bin dazu in der Lage,  mich  selbst gegen die Monster hier zu verteidigen, " +
+		"aber ich verlaufe mich sehr schnell, das ist sehr peinlich. Vielleicht kannst du mir helfen? Ich wuerde " +
+		"mich freuen, deinen Dienst mit einem meiner besten Zauberstaebe zu bezahlen.";
 	
 	private static final String TXT_DUST1	=
-		"Oh, what a pleasant surprise to meet a decent person in such place! I came here for a rare ingredient - " +
-		"_corpse dust_. It can be gathered from skeletal remains and there is an ample number of them in the dungeon. " +
-		"Being a magic user, I'm quite able to defend myself against local monsters, but I'm getting lost in no time, " +
-		"it's very embarrassing. Probably you could help me? I would be happy to pay for your service with one of my best wands.";
+		"Oh, was für eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
+		"_Leichenstaub_. Er kann aus Skelettresten gewonnen werden und es gibt eine grosse Zahl von ihnen in diesem Verlies. " +
+		"Ich als ein Magier bin dazu in der Lage, mich selbst gegen die Monster hier zu verteidigen, aber ich verlaufe mich schnell, " +
+		"das ist sehr peinlich. Vielleicht kannst du mir helfen? Ich wuerde mich freuen, deinen Dienst mit einem meiner besten Zauberstaebe zu bezahlen.";
 	
 	private static final String TXT_BERRY2	=
-		"Any luck with a Rotberry seed, %s? No? Don't worry, I'm not in a hurry.";
+		"Hattest du Glueck mit dem Rotberrysamen, %s? Nein? Keine Sorge, ich habe Zeit.";
 	
 	private static final String TXT_DUST2	=
-		"Any luck with corpse dust, %s? Bone piles are the most obvious places to look.";
+		"Hattest du Glueck mit dem Leichenstaub, %s? Knochenhaufen sind die ersichtlichsten Plaetze ihn zu finden.";
 	
 	@Override
 	protected boolean act() {
@@ -148,8 +148,8 @@ public class Wandmaker extends NPC {
 	@Override
 	public String description() {
 		return 
-			"This old but hale gentleman wears a slightly confused " +
-			"expression. He is protected by a magic shield.";
+			"Dieser alte aber gesunde Mann macht einen etwas verwirrten Eindruck. " +
+			"Er ist durch ein magisches Schild geschuetzt.";
 	}
 	
 	public static class Quest {
@@ -359,7 +359,7 @@ public class Wandmaker extends NPC {
 							mob.beckon( Dungeon.hero.pos );
 						}
 						
-						GLog.w( "The seed emits a roar that echoes throughout the dungeon!" );
+						GLog.w( "Der Samen stoesst einen Schrei aus, der durch das Verlies hallt!" );
 						CellEmitter.center( Dungeon.hero.pos ).start( Speck.factory( Speck.SCREAM ), 0.3f, 3 );
 						Sample.INSTANCE.play( Assets.SND_CHALLENGE );
 					}

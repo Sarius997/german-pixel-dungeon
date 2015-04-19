@@ -27,10 +27,10 @@ import com.sarius.germanpixeldungeon.utils.Utils;
 
 public class ImpShopkeeper extends Shopkeeper {
 
-	private static final String TXT_GREETINGS = "Hello, friend!";
+	private static final String TXT_GREETINGS = "Hallo Freund!";
 	
 	{
-		name = "ambitious imp";
+		name = "ehrgeiziger Kobold";
 		spriteClass = ImpSprite.class;
 	}
 	
@@ -65,7 +65,7 @@ public class ImpShopkeeper extends Shopkeeper {
 	@Override
 	public String description() {
 		return 
-			"Imps are lesser demons. They are notable for neither their strength nor their magic talent. " +
-			"But they are quite smart and sociable, and many of imps prefer to live and do business among non-demons.";
+				"Kobolde sind niedrigere Daemonen. Sie sind nicht wegen ihrer Staerke oder ihrem Magietalent beachtenswert, " +
+				"sondern weil sie sehr intelligent und gesellig sind. Viele Kobolde bevorzugen es unter Menschen zu leben und Geschaefte zu machen.";
 	}
 }

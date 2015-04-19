@@ -31,7 +31,7 @@ import com.sarius.germanpixeldungeon.windows.WndTradeItem;
 public class Shopkeeper extends NPC {
 
 	{
-		name = "shopkeeper";
+		name = "Kraemer";
 		spriteClass = ShopkeeperSprite.class;
 	}
 	
@@ -77,8 +77,8 @@ public class Shopkeeper extends NPC {
 	@Override
 	public String description() {
 		return 
-			"This stout guy looks more appropriate for a trade district in some large city " +
-			"than for a dungeon. His prices explain why he prefers to do business here.";
+			"Dieser beleibte Kerl passt eher zu einem Handelsviertel in einer grossen Stadt " +
+			"als zu einem Verlies. Seine Preise erklaeren, warum er sein Geschaeft hier betreibt.";
 	}
 	
 	public static WndBag sell() {

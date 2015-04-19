@@ -163,8 +163,8 @@ public class Ghost extends NPC {
 	@Override
 	public String description() {
 		return 
-			"The ghost is barely visible. It looks like a shapeless " +
-			"spot of faint light with a sorrowful face.";
+			"Der Geist ist kaum sichtbar. Er sieht wie ein formloses schwaches Licht " +
+			"mit einem traurigem Gesicht aus.";
 	}
 	
 	private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
@@ -387,7 +387,7 @@ public class Ghost extends NPC {
 		@Override
 		public String description() {
 			return
-				"This marsupial rat is much larger, than a regular one. It is surrounded by a foul cloud.";
+				"Diese Beutelratte ist sehr viel groesser als eine normale. Sie ist von einer uebelriechenden Wolke umgeben.";
 		}
 		
 		private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();

@@ -26,7 +26,7 @@ import com.sarius.germanpixeldungeon.sprites.RatKingSprite;
 public class RatKing extends NPC {
 
 	{
-		name = "rat king";
+		name = "Rattenkoenig";
 		spriteClass = RatKingSprite.class;
 		
 		state = SLEEPEING;
@@ -65,17 +65,17 @@ public class RatKing extends NPC {
 		sprite.turnTo( pos, Dungeon.hero.pos );
 		if (state == SLEEPEING) {
 			notice();
-			yell( "I'm not sleeping!" );
+			yell( "Ich schlafe nicht!" );
 			state = WANDERING;
 		} else {
-			yell( "What is it? I have no time for this nonsense. My kingdom won't rule itself!" );
+			yell( "Was ist? Ich habe keine Zeit fuer diesen Unsinn. Mein Koenigreich regiert sich nicht von allein!" );
 		}
 	}
 	
 	@Override
 	public String description() {
 		return 
-			"This rat is a little bigger than a regular marsupial rat " +
-			"and it's wearing a tiny crown on its head.";
+			"Diese Ratte ist ein kleines bisschen groesser als eine normale Beutelratte " +
+			"und sie hat eine winzige Krone auf ihrem Kopf.";
 	}
 }

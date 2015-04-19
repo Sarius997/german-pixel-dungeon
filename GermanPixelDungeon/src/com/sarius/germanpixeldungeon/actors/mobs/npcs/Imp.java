@@ -41,34 +41,34 @@ import com.watabou.utils.Random;
 public class Imp extends NPC {
 
 	{
-		name = "ambitious imp";
+		name = "ehrgeiziger Kobold";
 		spriteClass = ImpSprite.class;
 	}
 	
 	private static final String TXT_GOLEMS1	=
-		"Are you an adventurer? I love adventurers! You can always rely on them " +
-		"if something needs to be killed. Am I right? For bounty of course ;)\n" +
-		"In my case this is _golems_ who need to be killed. You see, I'm going to start a " +
-		"little business here, but these stupid golems are bad for business! " +
-		"It's very hard to negotiate with wandering lumps of granite, damn them! " +
-		"So please, kill... let's say _6 of them_ and a reward is yours.";
+		"Bist du ein Abenteurer? Ich liebe Abenteurer! Man kann sich immer auf sie verlassen " +
+		"wenn etwas getoetet werden soll. Hab ich recht? Fuer eine Belohnung natürlich ;)\n" +
+		"In meinem Fall sind es _Golems_ die getoetet werden sollen. Siehst du, ich will hier ein " +
+		"kleines Geschaeft aufbauen, aber diese dumme Golems sind schlecht fuers Geschaeft! " +
+		"Es ist sehr schwer, mit lebendigen Granitbrocken zu verhandeln, verdammt sollen sie sein! " +
+		"Also bitte toete... sagen wir mal _6 von ihnen_ und die Belohnung ist dein.";
 	
 	private static final String TXT_MONKS1	=
-		"Are you an adventurer? I love adventurers! You can always rely on them " +
-		"if something needs to be killed. Am I right? For bounty of course ;)\n" +
-		"In my case this is _monks_ who need to be killed. You see, I'm going to start a " +
-		"little business here, but these lunatics don't buy anything themselves and " +
-		"will scare away other customers. " +
-		"So please, kill... let's say _8 of them_ and a reward is yours.";
+		"Bist du ein Abenteurer? Ich liebe Abenteurer! Man kann sich immer auf sie verlassen " +
+		"wenn etwas getoetet werden soll. Hab ich recht? Fuer eine Belohnung natürlich ;)\n" +
+		"In meinem Fall sind es _Zwergenmoenche_ die getoetet werden sollen. Siehst du, ich will hier ein " +
+		"kleines Geschaeft aufbauen, aber diese verrueckten kaufen sich nichts und wuerden mir " +
+		"meine Kunden verschaeuchen. " +
+		"Also bitte toete... sagen wir mal _8 von ihnen_ und die Belohnung ist dein.";
 	
 	private static final String TXT_GOLEMS2	=
-		"How is your golem safari going?";	
+		"Wie verlaeuft deine Golemjagd?";	
 	
 	private static final String TXT_MONKS2	=
-		"Oh, you are still alive! I knew that your kung-fu is stronger ;) " +
-		"Just don't forget to grab these monks' tokens.";	
+		"Oh, du lebst noch! Ich wusste, dass dein kung fu staerker ist ;) " +
+		"Vergiss aber nicht die Tokens dieser Zwergenmoenche zu nehmen.";	
 	
-	private static final String TXT_CYA	= "See you, %s!";
+	private static final String TXT_CYA	= "Bis spaeter, %s!";
 	private static final String TXT_HEY	= "Psst, %s!";
 	
 	private boolean seenBefore = false;
@@ -151,8 +151,8 @@ public class Imp extends NPC {
 	@Override
 	public String description() {
 		return 
-			"Imps are lesser demons. They are notable for neither their strength nor their magic talent, " +
-			"but they are quite smart and sociable. Many imps prefer to live among non-demons.";
+			"Kobolde sind niedrigere Daemonen. Sie sind nicht wegen ihrer Staerke oder ihrem Magietalent beachtenswert, " +
+			"sondern weil sie sehr intelligent und gesellig sind. Viele Kobolde bevorzugen es unter Menschen zu leben.";
 	}
 	
 	public static class Quest {
