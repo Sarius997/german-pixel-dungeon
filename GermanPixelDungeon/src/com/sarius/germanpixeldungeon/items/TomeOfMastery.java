@@ -37,15 +37,15 @@ import com.sarius.germanpixeldungeon.windows.WndChooseWay;
 
 public class TomeOfMastery extends Item {
 
-	private static final String TXT_BLINDED	= "You can't read while blinded";
+	private static final String TXT_BLINDED	= "Du kannst nicht lesen waehrend dugeblendet bist";
 	
 	public static final float TIME_TO_READ = 10;
 	
-	public static final String AC_READ	= "READ";
+	public static final String AC_READ	= "LESEN";
 	
 	{
 		stackable = false;
-		name = "Tome of Mastery";
+		name = "Foliant des Meisterns";
 		image = ItemSpriteSheet.MASTERY;
 		
 		unique = true;
@@ -117,9 +117,9 @@ public class TomeOfMastery extends Item {
 	@Override
 	public String info() {
 		return 
-			"This worn leather book is not that thick, but you feel somehow, " +
-			"that you can gather a lot from it. Remember though that reading " +
-			"this tome may require some time.";
+			"Dieser abgenutze Lederband ist nicht sehr dick, aber irgendwie spuerst du, " +
+			"dass du daraus eine Menge lernen kannst. Denke aber daran, dass es einige Zeit " +
+			"in anspruch nehmen wird diesen Folianten zu lesen.";
 	}
 	
 	public void choose( HeroSubClass way ) {
@@ -136,7 +136,7 @@ public class TomeOfMastery extends Item {
 		
 		SpellSprite.show( curUser, SpellSprite.MASTERY );
 		curUser.sprite.emitter().burst( Speck.factory( Speck.MASTERY ), 12 );
-		GLog.w( "You have chosen the way of the %s!", Utils.capitalize( way.title() ) );
+		GLog.w( "Du hast den Weg des/der %s gewaehlt!", Utils.capitalize( way.title() ) );
 		
 		if (way == HeroSubClass.BERSERKER && curUser.HP <= curUser.HT * Fury.LEVEL) {
 			Buff.affect( curUser, Fury.class );

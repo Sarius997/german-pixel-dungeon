@@ -36,16 +36,16 @@ import com.sarius.germanpixeldungeon.windows.WndBag;
 
 public class Weightstone extends Item {
 	
-	private static final String TXT_SELECT_WEAPON	= "Select a weapon to balance";
-	private static final String TXT_FAST			= "you balanced your %s to make it faster";
-	private static final String TXT_ACCURATE		= "you balanced your %s to make it more accurate";
+	private static final String TXT_SELECT_WEAPON	= "Waehle eine Waffe zum ausbalancieren";
+	private static final String TXT_FAST			= "Du hast deine/n %s ausbalanciert um es schneller zu machen";
+	private static final String TXT_ACCURATE		= "Du hast deine/n %s ausbalanciert um es treffsicherer zu machen";
 	
 	private static final float TIME_TO_APPLY = 2;
 	
-	private static final String AC_APPLY = "APPLY";
+	private static final String AC_APPLY = "VERWENDEN";
 	
 	{
-		name = "weightstone";
+		name = "Steingewicht";
 		image = ItemSpriteSheet.WEIGHT;
 		
 		stackable = true;
@@ -109,7 +109,7 @@ public class Weightstone extends Item {
 	@Override
 	public String info() {
 		return
-			"Using a weightstone, you can balance your melee weapon to increase its speed or accuracy.";
+			"Du kannst ein Steingewicht nutzen, um deine Nahkampfwaffe auszubalancieren, um ihre Geschwindigkeit oder ihre Treffsicherheit zu vergroessern.";
 	}
 	
 	private final WndBag.Listener itemSelector = new WndBag.Listener() {
@@ -123,11 +123,11 @@ public class Weightstone extends Item {
 	
 	public class WndBalance extends Window {
 
-		private static final String TXT_CHOICE = "How would you like to balance your %s?";
+		private static final String TXT_CHOICE = "Wie willst du deine/n %s balancieren?";
 		
-		private static final String TXT_SPEED		= "For speed";
-		private static final String TXT_ACCURACY	= "For accuracy";
-		private static final String TXT_CANCEL		= "Never mind";
+		private static final String TXT_SPEED		= "Schnelligkeit";
+		private static final String TXT_ACCURACY	= "Treffsicherheit";
+		private static final String TXT_CANCEL		= "Lass gut sein";
 		
 		private static final int WIDTH			= 120;
 		private static final int MARGIN 		= 2;

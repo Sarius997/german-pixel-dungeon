@@ -31,7 +31,7 @@ public class Dewdrop extends Item {
 	private static final String TXT_VALUE	= "%+dHP";
 	
 	{
-		name = "dewdrop";
+		name = "Tautropfen";
 		image = ItemSpriteSheet.DEWDROP;
 		
 		stackable = true;

@@ -26,10 +26,10 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 
 public abstract class EquipableItem extends Item {
 
-	private static final String TXT_UNEQUIP_CURSED	= "You can't remove cursed %s!";
+	private static final String TXT_UNEQUIP_CURSED	= "Du kannst den/die/das verfluchte/n %s nicht ablegen!";
 	
-	public static final String AC_EQUIP		= "EQUIP";
-	public static final String AC_UNEQUIP	= "UNEQUIP";
+	public static final String AC_EQUIP		= "AUSRUESTEN";
+	public static final String AC_UNEQUIP	= "ABLEGEN";
 	
 	@Override
 	public void execute( Hero hero, String action ) {

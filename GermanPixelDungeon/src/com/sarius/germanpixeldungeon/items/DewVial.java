@@ -35,20 +35,20 @@ public class DewVial extends Item {
 
 	private static final int MAX_VOLUME	= 10;
 	
-	private static final String AC_DRINK	= "DRINK";
+	private static final String AC_DRINK	= "DRINKEN";
 	
 	private static final float TIME_TO_DRINK = 1f;
 	
 	private static final String TXT_VALUE	= "%+dHP";
 	private static final String TXT_STATUS	= "%d/%d";
 	
-	private static final String TXT_AUTO_DRINK	= "The dew vial was emptied to heal your wounds.";
-	private static final String TXT_COLLECTED	= "You collected a dewdrop into your dew vial.";
-	private static final String TXT_FULL		= "Your dew vial is full!";
-	private static final String TXT_EMPTY		= "Your dew vial is empty!";
+	private static final String TXT_AUTO_DRINK	= "Das Tauflaeschen wurde geleert um deine Wunden zu heilen.";
+	private static final String TXT_COLLECTED	= "Du hast einen Tautropfen in dein Flaeschen gefuellt.";
+	private static final String TXT_FULL		= "Dein Tauflaeschen ist voll!";
+	private static final String TXT_EMPTY		= "Dein Tauflaeschen ist leer!";
 	
 	{
-		name = "dew vial";
+		name = "Tauflaeschen";
 		image = ItemSpriteSheet.VIAL;
 		
 		defaultAction = AC_DRINK;
@@ -175,9 +175,8 @@ public class DewVial extends Item {
 	@Override
 	public String info() {
 		return 
-			"You can store excess dew in this tiny vessel for drinking it later. " +
-			"If the vial is full, in a moment of deadly peril the dew will be " +
-			"consumed automatically.";
+			"Du kanst ueberschuessigen Tau in diesem kleinen Gefaess aufbewahren um ihn spaeter zu drinken. " +
+			"Wenn das Flaeschen voll ist, wird der Tau automatisch gedrunken wenn du dich in Todesgefahr befindest.";
 	}
 	
 	@Override

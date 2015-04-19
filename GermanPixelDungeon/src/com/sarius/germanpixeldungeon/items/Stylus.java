@@ -31,15 +31,15 @@ import com.sarius.germanpixeldungeon.windows.WndBag;
 
 public class Stylus extends Item {
 	
-	private static final String TXT_SELECT_ARMOR	= "Select an armor to inscribe on";
-	private static final String TXT_INSCRIBED		= "you inscribed the %s on your %s";
+	private static final String TXT_SELECT_ARMOR	= "Waehle eine Ruestung zum beschriften aus";
+	private static final String TXT_INSCRIBED		= "Du hast die %s auf deine %s geschrieben";
 	
 	private static final float TIME_TO_INSCRIBE = 2;
 	
-	private static final String AC_INSCRIBE = "INSCRIBE";
+	private static final String AC_INSCRIBE = "BESCHRIFTEN";
 	
 	{
-		name = "arcane stylus";
+		name = "arkaner Stylus";
 		image = ItemSpriteSheet.STYLUS;
 		
 		stackable = true;
@@ -106,9 +106,9 @@ public class Stylus extends Item {
 	@Override
 	public String info() {
 		return
-			"This arcane stylus is made of some dark, very hard stone. Using it you can inscribe " +
-			"a magical glyph on your armor, but you have no power over choosing what glyph it will be, " +
-			"the stylus will decide it for you.";
+			"Dieser arkane Stylusist aus einem dunklen, sehr hartem Stein. Wenn du ihn benutzt, kannst du " +
+			"eine magische Glyphe auf deine Ruestung schreiben, aber du hast keine Moeglichkeit die Glyphe auszusuchen, " +
+			"der Stylus wird das fuer dich entscheiden.";
 	}
 	
 	private final WndBag.Listener itemSelector = new WndBag.Listener() {

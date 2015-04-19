@@ -37,30 +37,30 @@ import com.watabou.utils.Bundle;
 public class LloydsBeacon extends Item {
 
 	private static final String TXT_PREVENTING = 
-		"Strong magic aura of this place prevents you from using the lloyd's beacon!";
+		"Die starke magische Aura dieses Ortes hindert dich daran Lloyd's B lloyd's Beacon zu verwenden!";
 	
 	private static final String TXT_CREATURES = 
-		"Psychic aura of neighbouring creatures doesn't allow you to use the lloyd's beacon at this moment.";
+		"Psyische Aura von nahen Kreaturen erlaubt es dir nicht Lloyd's Beacon in diesem Moment zu benutzen.";
 	
 	private static final String TXT_RETURN = 
-		"The lloyd's beacon is successfully set at your current location, now you can return here anytime.";
+		"Lloyd's Beacon wurde erfolgreich auf deine aktuelle Position gesetzt, du kannst jetzt jederzeit an diesen Ort zurueckkehren.";
 			
 	private static final String TXT_INFO =
-		"Lloyd's beacon is an intricate magic device, that allows you to return to a place you have already been.";
+		"Lloyd's Beacon ist ein kompliziertes magisches Geraet, welches es dir erlaubt, an einen Ort zurueckzukehren an dem du schon warst.";
 	
 	private static final String TXT_SET = 
-		"\n\nThis beacon was set somewhere on the level %d of Pixel Dungeon.";
+		"\n\nDieser Beacon wurde irgendwo auf Level %d von Pixel Dungeon gesetzt.";
 	
 	public static final float TIME_TO_USE = 1;
 	
-	public static final String AC_SET		= "SET";
-	public static final String AC_RETURN	= "RETURN";
+	public static final String AC_SET		= "SETZEN";
+	public static final String AC_RETURN	= "ZURUECKKEHREN";
 	
 	private int returnDepth	= -1;
 	private int returnPos;
 	
 	{
-		name = "lloyd's beacon";
+		name = "Lloyd's Beacon";
 		image = ItemSpriteSheet.BEACON;
 		
 		unique = true;

@@ -33,8 +33,8 @@ import com.sarius.germanpixeldungeon.windows.WndBag;
 
 public class ArmorKit extends Item {
 	
-	private static final String TXT_SELECT_ARMOR	= "Select an armor to upgrade";
-	private static final String TXT_UPGRADED		= "you applied the armor kit to upgrade your %s";
+	private static final String TXT_SELECT_ARMOR	= "Waehle eine Ruestung zum verbessern aus";
+	private static final String TXT_UPGRADED		= "Du hast Ruestungswerkzeug dazu verwendet, deine %s zu verbessern";
 	
 	private static final float TIME_TO_UPGRADE = 2;
 	
@@ -108,9 +108,9 @@ public class ArmorKit extends Item {
 	@Override
 	public String info() {
 		return
-			"Using this kit of small tools and materials anybody can transform any armor into an \"epic armor\", " +
-			"which will keep all properties of the original armor, but will also provide its wearer a special ability " +
-			"depending on his class. No skills in tailoring, leatherworking or blacksmithing are required.";
+			"Mit dieser Sammlung an kleinen Werkzeugen und Materialien kann jeder seine Ruestung in eine \"epische Ruestung\" verwandeln, " +
+			"welche alle Eigenschaften der originalen Ruestung behaelt, aber sie gewaehrt ihrem Traeger eine Spezialfaehigkeits " +
+			"die von seiner Klasse abhaengt. Es werden keine Faehigkeiten in Schneiderei, Lederverarbeitung oder Schmiedekunst benoetigt.";
 	}
 	
 	private final WndBag.Listener itemSelector = new WndBag.Listener() {

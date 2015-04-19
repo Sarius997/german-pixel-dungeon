@@ -30,10 +30,10 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 
 public class Amulet extends Item {
 	
-	private static final String AC_END = "END THE GAME";
+	private static final String AC_END = "SPIEL BEENDEN";
 	
 	{
-		name = "Amulet of Yendor";
+		name = "Amulett von Yendor";
 		image = ItemSpriteSheet.AMULET;
 		
 		unique = true;
@@ -98,7 +98,7 @@ public class Amulet extends Item {
 	@Override
 	public String info() {
 		return 
-			"The Amulet of Yendor is the most powerful known artifact of unknown origin. It is said that the amulet " +
-			"is able to fulfil any wish if its owner's will-power is strong enough to \"persuade\" it to do it.";
+			"Das Amulett von Yendor ist das maechtigste bekannte Artefakt mit unbekanntem Ursprung. Is wird erzaehlt, dass das Amulett " +
+			"die Macht hat seinem Besitzer jeden Wunsch zu erfuellen, wenn sein Wille gross genug ist um das Amulett davon zu \"ueberzeugen\".";
 	}
 }

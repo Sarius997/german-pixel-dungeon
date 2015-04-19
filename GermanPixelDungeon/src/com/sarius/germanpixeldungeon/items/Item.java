@@ -46,7 +46,7 @@ import com.watabou.utils.Callback;
 
 public class Item implements Bundlable {
 
-	private static final String TXT_PACK_FULL = "Your pack is too full for the %s";
+	private static final String TXT_PACK_FULL = "Dein Rucksack ist zu voll fuer den/die/das %s";
 	
 	private static final String TXT_TO_STRING		= "%s";
 	private static final String TXT_TO_STRING_X		= "%s x%d";
@@ -461,7 +461,7 @@ public class Item implements Bundlable {
 		}
 		@Override
 		public String prompt() {
-			return "Choose direction of throw";
+			return "Waehle die Wurfrichtung";
 		}
 	};
 }
