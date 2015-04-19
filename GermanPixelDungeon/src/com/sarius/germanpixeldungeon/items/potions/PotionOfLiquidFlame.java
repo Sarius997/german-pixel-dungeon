@@ -26,7 +26,7 @@ import com.sarius.germanpixeldungeon.scenes.GameScene;
 public class PotionOfLiquidFlame extends Potion {
 
 	{
-		name = "Potion of Liquid Flame";
+		name = "Feuerdrank";
 	}
 	
 	@Override
@@ -44,8 +44,8 @@ public class PotionOfLiquidFlame extends Potion {
 	@Override
 	public String desc() {
 		return
-			"This flask contains an unstable compound which will burst " +
-			"violently into flame upon exposure to open air.";
+			"Diese Flasche enthaelt ein instabiles Gemisch welches " +
+			"heftig in Flammen ausbricht wenn es Luft ausgesetzt ist.";
 	}
 	
 	@Override

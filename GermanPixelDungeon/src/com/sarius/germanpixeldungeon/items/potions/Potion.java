@@ -39,16 +39,16 @@ import com.watabou.utils.Bundle;
 
 public class Potion extends Item {
 	
-	public static final String AC_DRINK	= "DRINK";
+	public static final String AC_DRINK	= "DRINKEN";
 	
-	private static final String TXT_HARMFUL		= "Harmful potion!";
-	private static final String TXT_BENEFICIAL	= "Beneficial potion";
-	private static final String TXT_YES			= "Yes, I know what I'm doing";
-	private static final String TXT_NO			= "No, I changed my mind";
+	private static final String TXT_HARMFUL		= "Schaedlicher Drank!";
+	private static final String TXT_BENEFICIAL	= "Nuetzlicher Drank";
+	private static final String TXT_YES			= "Ja, ich weiss was ich mache";
+	private static final String TXT_NO			= "Nein, ich habe meine Meinung geaendert";
 	private static final String TXT_R_U_SURE_DRINK = 
-		"Are you sure you want to drink it? In most cases you should throw such potions at your enemies.";
+		"Bist du dir sicher, dass du ihn drinken willst? In den meisten Faellen solltest du diesen Drank auf Feinde werfen.";
 	private static final String TXT_R_U_SURE_THROW = 
-		"Are you sure you want to throw it? In most cases it makes sense to drink it.";
+		"Bist du dir sicher, dass du ihn werfen willst? In den meisten Faellen ist es Sinnvoll ihn zu drinken.";
 	
 	private static final float TIME_TO_DRINK = 1f;
 	
@@ -213,7 +213,7 @@ public class Potion extends Item {
 	}
 	
 	protected void shatter( int cell ) {
-		GLog.i( "The flask shatters and " + color() + " liquid splashes harmlessly" );
+		GLog.i( "Die Flasche ist zersplitterd und " + color() + " Fluessigkeit spritzt harmlos umher" );
 		Sample.INSTANCE.play( Assets.SND_SHATTER );
 		splash( cell );
 	}
@@ -249,8 +249,8 @@ public class Potion extends Item {
 	public String info() {
 		return isKnown() ?
 			desc() :
-			"This flask contains a swirling " + color + " liquid. " +
-			"Who knows what it will do when drunk or thrown?";
+			"Diese Flasche enthaelt eine wabernde " + color + " Fluessigkeit. " +
+			"Wer weiss was passiert, wenn du sie drinkst oder wirfst?";
 	}
 	
 	@Override

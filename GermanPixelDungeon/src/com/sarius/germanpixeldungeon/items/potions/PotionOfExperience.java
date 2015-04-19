@@ -22,7 +22,7 @@ import com.sarius.germanpixeldungeon.actors.hero.Hero;
 public class PotionOfExperience extends Potion {
 
 	{
-		name = "Potion of Experience";
+		name = "Erfahrungstrank";
 	}
 	
 	@Override
@@ -34,8 +34,8 @@ public class PotionOfExperience extends Potion {
 	@Override
 	public String desc() {
 		return
-			"The storied experiences of multitudes of battles reduced to liquid form, " +
-			"this draught will instantly raise your experience level.";
+			"Die gespeicherten Erfahrungen von verschiedenen Schlachten in fluessiger Form, " +
+			"ein Schluck davon wird deinen Erfahrungslevel erhoehen.";
 	}
 	
 	@Override
