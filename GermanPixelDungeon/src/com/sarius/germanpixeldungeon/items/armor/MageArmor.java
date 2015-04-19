@@ -34,12 +34,12 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 
 public class MageArmor extends ClassArmor {	
 	
-	private static final String AC_SPECIAL = "MOLTEN EARTH"; 
+	private static final String AC_SPECIAL = "GESCHMOLZENE ERDE"; 
 	
-	private static final String TXT_NOT_MAGE	= "Only mages can use this armor!";
+	private static final String TXT_NOT_MAGE	= "Nur Magier koennen diese Ruestung benutzen!";
 	
 	{
-		name = "mage robe";
+		name = "Magierrobe";
 		image = ItemSpriteSheet.ARMOR_MAGE;
 	}
 	
@@ -51,8 +51,8 @@ public class MageArmor extends ClassArmor {
 	@Override
 	public String desc() {
 		return
-			"Wearing this gorgeous robe, a mage can cast a spell of molten earth: all the enemies " +
-			"in his field of view will be set on fire and unable to move at the same time.";
+			"Wenn er diese prachtvolle Robe traegt, kann ein Magier einen Zauber der geschmolzenen Erde wirken: alle Feinde " +
+			"in seinem Sichtfeld werden Feuer fangen und sind unfaehig sich zur gleichen Zeit zu bewegen.";
 	}
 	
 	@Override

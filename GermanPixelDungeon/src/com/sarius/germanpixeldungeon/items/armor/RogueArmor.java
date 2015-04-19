@@ -37,13 +37,13 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 
 public class RogueArmor extends ClassArmor {
 	
-	private static final String TXT_FOV 		= "You can only jump to an empty location in your field of view";
-	private static final String TXT_NOT_ROGUE	= "Only rogues can use this armor!";
+	private static final String TXT_FOV 		= "Du kannst nur an eine leere Stelle in deinem Sichtfeld springen";
+	private static final String TXT_NOT_ROGUE	= "Nur Schurken koennen diese Ruestung benutzen!";
 	
-	private static final String AC_SPECIAL = "SMOKE BOMB"; 
+	private static final String AC_SPECIAL = "RAUCHBOMBE"; 
 	
 	{
-		name = "rogue garb";
+		name = "Schurkentracht";
 		image = ItemSpriteSheet.ARMOR_ROGUE;
 	}
 	
@@ -70,8 +70,8 @@ public class RogueArmor extends ClassArmor {
 	@Override
 	public String desc() {
 		return 
-			"Wearing this dark garb, a rogue can perform a trick, that is called \"smoke bomb\" " +
-			"(though no real explosives are used): he blinds enemies who could see him and jumps aside.";
+			"Wenn er diese dunkle Tracht traegt, kann ein Schurke einen Trick vollfuehren, der \"Rauchbombe\" genannt wird " +
+			"(obwohl kein richtiger Sprengstoff verwendet wird): er blendet Feinde die ihn sehen koennen und springt zur Seite.";
 	}
 	
 	protected static CellSelector.Listener teleporter = new  CellSelector.Listener() {
@@ -110,7 +110,7 @@ public class RogueArmor extends ClassArmor {
 		
 		@Override
 		public String prompt() {
-			return "Choose a location to jump to";
+			return "Waehle eine Stelle an die du springen willst";
 		}
 	};
 }

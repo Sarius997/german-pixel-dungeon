@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class ScaleArmor extends Armor {
 
 	{
-		name = "scale armor";
+		name = "Schuppenpanzer";
 		image = ItemSpriteSheet.ARMOR_SCALE;
 	}
 	
@@ -34,6 +34,6 @@ public class ScaleArmor extends Armor {
 	@Override
 	public String desc() {
 		return 
-			"The metal scales sewn onto a leather vest create a flexible, yet protective armor.";
+			"Die Metallschuppen die auf eine Lederweste genaeht sind bringen eine flexible, dennoch auch schuetzende Ruestung hervor.";
 	}
 }

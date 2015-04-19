@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class LeatherArmor extends Armor {
 
 	{	
-		name = "leather armor";
+		name = "Lederruestung";
 		image = ItemSpriteSheet.ARMOR_LEATHER;
 	}
 	
@@ -33,6 +33,6 @@ public class LeatherArmor extends Armor {
 	
 	@Override
 	public String desc() {
-		return "Armor made from tanned monster hide. Not as light as cloth armor but provides better protection.";
+		return "Ruestung aus gegerbtem Monsterfell. Nicht so leicht wie eine Stoffruestung aber sie schuetzt besser.";
 	}
 }

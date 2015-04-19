@@ -36,14 +36,14 @@ import com.watabou.utils.Random;
 
 public class Armor extends EquipableItem {
 	
-	private static final String TXT_EQUIP_CURSED	= "your %s constricts around you painfully";
+	private static final String TXT_EQUIP_CURSED	= "Deine %s zieht sich schmerzvoll um dich zusammen";
 		
-	private static final String TXT_IDENTIFY	= "you are now familiar enough with your %s to identify it. It is %s.";
+	private static final String TXT_IDENTIFY	= "Du bist nun erfahren genug mit deiner %s um sie zu identifizieren. Es ist %s.";
 	
 	private static final String TXT_TO_STRING	= "%s :%d";
 	
 	private static final String TXT_INCOMPATIBLE = 
-		"Interaction of different types of magic has erased the glyph on this armor!";
+		"Das Zusammenspiel verschiedener Arten von Magie hat die Glyphe dieser Ruestung ausgeloescht!";
 	
 	public int tier;
 	
@@ -207,41 +207,41 @@ public class Armor extends EquipableItem {
 		
 		if (levelKnown) {
 			info.append( 
-				"\n\nThis " + name + " provides damage absorption up to " +
-				"" + Math.max( DR, 0 ) + " points per attack. " );
+				"\n\nDiese " + name + " absorbiert bis zu " +
+				"" + Math.max( DR, 0 ) + " Schadenspunkte pro Angriff. " );
 			
 			if (STR > Dungeon.hero.STR()) {
 				
 				if (isEquipped( Dungeon.hero )) {
 					info.append( 
-						"\n\nBecause of your inadequate strength your " +
-						"movement speed and defense skill is decreased. " );
+						"\n\nWegen deiner mangelnden Staerke sind deine Geschwindigkeit " +
+						"und dein Verteidigungsvermoegen erniedrigt. " );
 				} else {
 					info.append( 
-						"\n\nBecause of your inadequate strength wearing this armor " +
-						"will decrease your movement speed and defense skill. " );
+						"\n\nWegen deiner mangelnden Staerke wird es deine Bewegungsgeschwindigkeit und " +
+						"dein Verteidigungsvermoegen erniedrigen wenn du diese Ruestung ausruestest. " );
 				}
 				
 			}
 		} else {
 			info.append( 
-				"\n\nTypical " + name + " provides damage absorption up to " + typicalDR() + " points per attack " +
-				" and requires " + typicalSTR() + " points of strength. " );
+				"\n\nNormale absorbiert " + name + " bis zu " + typicalDR() + " Schadenspunkte pro Angriff" +
+				" und benoetigt " + typicalSTR() + " Staerkepunkte. " );
 			if (typicalSTR() > Dungeon.hero.STR()) {
-				info.append( "Probably this armor is too heavy for you. " );
+				info.append( "Vielleicht ist diese Ruestung zu schwer fuer dich. " );
 			}
 		}
 		
 		if (glyph != null) {
-			info.append( "It is inscribed." );
+			info.append( "Sie ist beschriftet." );
 		}
 		
 		if (isEquipped( Dungeon.hero )) {
-			info.append( "\n\nYou are wearing the " + name + 
-				(cursed ? ", and because it is cursed, you are powerless to remove it." : ".") ); 
+			info.append( "\n\nDu traegst die " + name + 
+				(cursed ? ", und weil sie verflucht ist, kannst du nichts tun um sie abzulegen." : ".") ); 
 		} else {
 			if (cursedKnown && cursed) {
-				info.append( "\n\nYou can feel a malevolent magic lurking within the " + name + "." );
+				info.append( "\n\nDu kannst eine boesartige Magie spueren die in der " + name + " lauert." );
 			}
 		}
 		

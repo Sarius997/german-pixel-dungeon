@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class ClothArmor extends Armor {
 
 	{	
-		name = "cloth armor";
+		name = "Stoffruestung";
 		image = ItemSpriteSheet.ARMOR_CLOTH;
 	}
 	
@@ -33,6 +33,6 @@ public class ClothArmor extends Armor {
 	
 	@Override
 	public String desc() {
-		return "This lightweight armor offers basic protection.";
+		return "Diese leichtgewichtige Ruestung bietet grundlegenden Schutz.";
 	}
 }

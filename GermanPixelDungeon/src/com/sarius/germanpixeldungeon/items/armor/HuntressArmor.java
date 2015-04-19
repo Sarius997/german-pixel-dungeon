@@ -33,13 +33,13 @@ import com.watabou.utils.Callback;
 
 public class HuntressArmor extends ClassArmor {
 	
-	private static final String TXT_NO_ENEMIES 		= "No enemies in sight";
-	private static final String TXT_NOT_HUNTRESS	= "Only huntresses can use this armor!";
+	private static final String TXT_NO_ENEMIES 		= "Keine Feinde in sicht";
+	private static final String TXT_NOT_HUNTRESS	= "Nur Jaegerinnen koennen diese Ruestung benutzen!";
 	
-	private static final String AC_SPECIAL = "SPECTRAL BLADES"; 
+	private static final String AC_SPECIAL = "SPEKTRALKLINGEN"; 
 	
 	{
-		name = "huntress cloak";
+		name = "Jaegerinnenmantel";
 		image = ItemSpriteSheet.ARMOR_HUNTRESS;
 	}
 	
@@ -100,8 +100,8 @@ public class HuntressArmor extends ClassArmor {
 	@Override
 	public String desc() {
 		return
-			"A huntress in such cloak can create a fan of spectral blades. Each of these blades " +
-			"will target a single enemy in the huntress's field of view, inflicting damage depending " +
-			"on her currently equipped melee weapon.";
+			"Eine Jaegerin in solch einem Mantel kann einen Sturm aus Spektralklingen erzeugen. Jede von diesen Klingen " +
+			"wird auf einen einzelnen Feind in dem Sichtfeld der Jaegerin zielen und Schaden abhaengig von " +
+			"ihrer aktuell ausgeruesteten Nahkampfwaffe.";
 	}
 }
