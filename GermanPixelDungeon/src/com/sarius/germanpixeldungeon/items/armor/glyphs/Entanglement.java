@@ -32,7 +32,7 @@ import com.watabou.utils.Random;
 
 public class Entanglement extends Glyph {
 
-	private static final String TXT_ENTANGLEMENT	= "%s of entanglement";
+	private static final String TXT_ENTANGLEMENT	= "%s der Verflechtung";
 	
 	private static ItemSprite.Glowing GREEN = new ItemSprite.Glowing( 0x448822 );
 	
