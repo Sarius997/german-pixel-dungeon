@@ -22,14 +22,14 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class GoldenKey extends Key {
 	
 	{
-		name = "golden key";
+		name = "goldener Schluessel";
 		image = ItemSpriteSheet.GOLDEN_KEY;
 	}
 	
 	@Override
 	public String info() {
 		return 
-			"The notches on this golden key are tiny and intricate. " +
-			"Maybe it can open some chest lock?";
+			"Die Kerben an diesem goldenen Schluessel sind winzig und verschachtelt. " +
+			"Vielleicht kann er das Schloss einer Truhe oeffnen?";
 	}
 }

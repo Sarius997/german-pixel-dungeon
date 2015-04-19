@@ -22,14 +22,14 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class SkeletonKey extends Key {
 	
 	{
-		name = "skeleton key";
+		name = "Skelettschluessel";
 		image = ItemSpriteSheet.SKELETON_KEY;
 	}
 	
 	@Override
 	public String info() {
 		return 
-			"This key looks serious: its head is shaped like a skull. " +
-			"Probably it can open some serious door.";
+			"Dieser Schluessel sieht wichtig aus: sein Kopf ist wie ein Schaedel geformt. " +
+			"Vielleicht kann er eine wichtige Tuere oeffnen.";
 	}
 }

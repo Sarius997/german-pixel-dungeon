@@ -24,12 +24,12 @@ import com.sarius.germanpixeldungeon.utils.Utils;
 
 public class IronKey extends Key {
 
-	private static final String TXT_FROM_DEPTH = "iron key from depth %d";
+	private static final String TXT_FROM_DEPTH = "Eisenschluessel aus Ebene %d";
 
 	public static int curDepthQuantity = 0;
 	
 	{
-		name = "iron key";
+		name = "Eisenschluessel";
 		image = ItemSpriteSheet.IRON_KEY;
 	}
 	
@@ -57,7 +57,7 @@ public class IronKey extends Key {
 	@Override
 	public String info() {
 		return 
-			"The notches on this ancient iron key are well worn; its leather lanyard " +
-			"is battered by age. What door might it open?";
+			"Die Kerben auf diesem alten Eisenschluessel sind abgewetzt; sein Lederband " +
+			"ist durch das Alter abgewetzt. Welche Tuere koennte er oeffnen?";
 	}
 }
