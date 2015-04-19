@@ -24,7 +24,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class SeedPouch extends Bag {
 
 	{
-		name = "seed pouch";
+		name = "Samentasche";
 		image = ItemSpriteSheet.POUCH;
 		
 		size = 8;
@@ -43,6 +43,6 @@ public class SeedPouch extends Bag {
 	@Override
 	public String info() {
 		return
-			"This small velvet pouch allows you to store any number of seeds in it. Very convenient.";
+			"Diese kleine samtene Tasche erlaubt es dir eine beliebige Anzahl an Samen in ihr aufzubewahren. Sehr praktisch.";
 	}
 }

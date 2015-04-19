@@ -24,7 +24,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class ScrollHolder extends Bag {
 
 	{
-		name = "scroll holder";
+		name = "Rollentasche";
 		image = ItemSpriteSheet.HOLDER;
 		
 		size = 12;
@@ -43,7 +43,7 @@ public class ScrollHolder extends Bag {
 	@Override
 	public String info() {
 		return
-			"You can place any number of scrolls into this tubular container. " +
-			"It saves room in your backpack and protects scrolls from fire.";
+			"Du kannst eine beliebige Anzahl an Schriftrollen in dieser rohrfoermigen Tasche aufbewahren. " +
+			"Sie spart Platz in deinem Inventar und schuetzt die Rollen vor Feuer.";
 	}
 }

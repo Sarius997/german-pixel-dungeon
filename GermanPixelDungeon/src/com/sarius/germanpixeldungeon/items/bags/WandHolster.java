@@ -24,7 +24,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class WandHolster extends Bag {
 
 	{
-		name = "wand holster";
+		name = "Stabtasche";
 		image = ItemSpriteSheet.HOLSTER;
 		
 		size = 12;
@@ -64,7 +64,7 @@ public class WandHolster extends Bag {
 	@Override
 	public String info() {
 		return
-			"This slim holder is made of leather of some exotic animal. " +
-			"It allows to compactly carry up to " + size + " wands.";
+			"Diese schmale Tasche ist aus dem Leder eines exotischen Tieres gemacht. " +
+			"Sie erlaubt es dir bis zu " + size + " Zauberstaebe auf kleinstem Raum zu tragen.";
 	}
 }
