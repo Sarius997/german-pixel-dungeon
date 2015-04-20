@@ -27,31 +27,30 @@ import com.sarius.germanpixeldungeon.scenes.GameScene;
 public class PotionOfToxicGas extends Potion {
 
 	{
-		name = "Potion of Toxic Gas";
+		name = "Trank des giftigen Gases";
 	}
-	
+
 	@Override
-	protected void shatter( int cell ) {
-		
+	protected void shatter(int cell) {
+
 		setKnown();
-		
-		splash( cell );
-		Sample.INSTANCE.play( Assets.SND_SHATTER );
-		
-		ToxicGas gas = Blob.seed( cell, 1000, ToxicGas.class );
-		Actor.add( gas );
-		GameScene.add( gas );
+
+		splash(cell);
+		Sample.INSTANCE.play(Assets.SND_SHATTER);
+
+		ToxicGas gas = Blob.seed(cell, 1000, ToxicGas.class);
+		Actor.add(gas);
+		GameScene.add(gas);
 	}
-	
+
 	@Override
 	public String desc() {
-		return
-			"Uncorking or shattering this pressurized glass will cause " +
-			"its contents to explode into a deadly cloud of toxic green gas. " +
-			"You might choose to fling this potion at distant enemies " +
-			"instead of uncorking it by hand.";
+		return "Wenn diese Flasche entkorkt oder erschuettert wird, wird ihr "
+				+ "Inhalt zu einer giftigen gruenen Gaswolke explodieren. "
+				+ "Du solltest diesen Trank lieber auf entfernte Feide schleudern, "
+				+ "als sie von Hand zu entkorken.";
 	}
-	
+
 	@Override
 	public int price() {
 		return isKnown() ? 40 * quantity : super.price();
