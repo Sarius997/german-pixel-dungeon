@@ -30,7 +30,7 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 public class PotionOfHealing extends Potion {
 
 	{
-		name = "Heildrank";
+		name = "Heiltrank";
 	}
 	
 	@Override

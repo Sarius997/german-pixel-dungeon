@@ -25,7 +25,7 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 public class PotionOfLevitation extends Potion {
 
 	{
-		name = "Schwerelosigkeitsdrank";
+		name = "Schwerelosigkeitstrank";
 	}
 	
 	@Override
@@ -38,7 +38,7 @@ public class PotionOfLevitation extends Potion {
 	@Override
 	public String desc() {
 		return
-			"Das Drinken dieser seltsamen Fluessigkeit wird dich in der Luft schweben lassen, " +
+			"Das Trinken dieser seltsamen Fluessigkeit wird dich in der Luft schweben lassen, " +
 			"faehig, muehelos über Fallen zu schweben. Flammen und Gase in der Luft " +
 			"koennen damit aber nicht umgangen werden.";
 	}

@@ -26,7 +26,7 @@ import com.sarius.germanpixeldungeon.scenes.GameScene;
 public class PotionOfParalyticGas extends Potion {
 
 	{
-		name = "Potion of Paralytic Gas";
+		name = "Trank des Laehmungsgases";
 	}
 	
 	@Override
@@ -43,10 +43,10 @@ public class PotionOfParalyticGas extends Potion {
 	@Override
 	public String desc() {
 		return
-			"Upon exposure to open air, the liquid in this flask will vaporize " +
-			"into a numbing yellow haze. Anyone who inhales the cloud will be paralyzed " +
-			"instantly, unable to move for some time after the cloud dissipates. This " +
-			"item can be thrown at distant enemies to catch them within the effect of the gas.";
+			"Unter der Einwirkung von Luft wird die Fluessigkeit in dieser Flasche zu einem betaeubenden gelbem " +
+			"Nebel verdampfen. Jeder, der etwas von der Wolke einatmet wird augenblicklich gelaehmt und ist " +
+			"auch kurze Zeit nachdem sich die Wolke zerstreut hat noch unfaehig sich zu bewegen. Dieser " +
+			"Gegenstand kann auf entfernte Feinde geworfen werden, um sie im Effekt des Gases zu fangen.";
 	}
 	
 	@Override

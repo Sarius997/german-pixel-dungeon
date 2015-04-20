@@ -25,7 +25,7 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 public class PotionOfStrength extends Potion {
 
 	{
-		name = "Potion of Strength";
+		name = "Staerketrank";
 	}
 	
 	@Override
@@ -34,7 +34,7 @@ public class PotionOfStrength extends Potion {
 		
 		hero.STR++;
 		hero.sprite.showStatus( CharSprite.POSITIVE, "+1 str" );
-		GLog.p( "Newfound strength surges through your body." );
+		GLog.p( "Neu entdeckte Staerke flutet durch deinen Koerper." );
 		
 		Badges.validateStrengthAttained();
 	}
@@ -42,8 +42,8 @@ public class PotionOfStrength extends Potion {
 	@Override
 	public String desc() {
 		return
-			"This powerful liquid will course through your muscles, " +
-			"permanently increasing your strength by one point.";
+			"Diese maechtige Fluessigkeit wird deine Muskeln durchstroemen und " +
+			"deine Staerke permanent um einen Punkt erhoehen.";
 	}
 	
 	@Override

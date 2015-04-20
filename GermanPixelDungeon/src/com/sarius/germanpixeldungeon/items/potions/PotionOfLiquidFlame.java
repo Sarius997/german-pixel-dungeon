@@ -26,7 +26,7 @@ import com.sarius.germanpixeldungeon.scenes.GameScene;
 public class PotionOfLiquidFlame extends Potion {
 
 	{
-		name = "Feuerdrank";
+		name = "Feuertrank";
 	}
 	
 	@Override

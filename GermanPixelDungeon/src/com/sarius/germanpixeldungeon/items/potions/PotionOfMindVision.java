@@ -26,7 +26,7 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 public class PotionOfMindVision extends Potion {
 
 	{
-		name = "Potion of Mind Vision";
+		name = "Trank der Geistessicht";
 	}
 	
 	@Override
@@ -36,18 +36,18 @@ public class PotionOfMindVision extends Potion {
 		Dungeon.observe();
 		
 		if (Dungeon.level.mobs.size() > 0) {
-			GLog.i( "You can somehow feel the presence of other creatures' minds!" );
+			GLog.i( "Irgendwie kannst du die Anwesenheit der Geister anderer Kreaturen spueren!" );
 		} else {
-			GLog.i( "You can somehow tell that you are alone on this level at the moment." );
+			GLog.i( "Irgendwie weisst du, dass du im Moment allein auf dieser Ebene bist." );
 		}
 	}
 	
 	@Override
 	public String desc() {
 		return
-			"After drinking this, your mind will become attuned to the psychic signature " +
-			"of distant creatures, enabling you to sense biological presences through walls. " +
-			"Also this potion will permit you to see through nearby walls and doors.";
+			"Wenn du dies trinkst, wird dein Geist auf die psychische Signatur entfernter Kreaturen " +
+			"abgestimmt, was es dir erlaubt, biologische Wesen durch Waende zu spueren. " +
+			"Ausserdem erlaubt es dir dieser Trank auch, durch nahegelegene Waende und Tueren zu sehen.";
 	}
 	
 	@Override

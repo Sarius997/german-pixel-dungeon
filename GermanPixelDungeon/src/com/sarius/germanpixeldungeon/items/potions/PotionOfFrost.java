@@ -31,7 +31,7 @@ public class PotionOfFrost extends Potion {
 	private static final int DISTANCE	= 2;
 	
 	{
-		name = "Frostdrank";
+		name = "Frosttrank";
 	}
 	
 	@Override

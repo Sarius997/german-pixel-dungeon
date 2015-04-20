@@ -24,27 +24,26 @@ import com.sarius.germanpixeldungeon.utils.GLog;
 public class PotionOfMight extends PotionOfStrength {
 
 	{
-		name = "Potion of Might";
+		name = "Trank der Macht";
 	}
-	
+
 	@Override
-	protected void apply( Hero hero ) {
+	protected void apply(Hero hero) {
 		setKnown();
-		
+
 		hero.STR++;
 		hero.HT += 5;
 		hero.HP += 5;
-		hero.sprite.showStatus( CharSprite.POSITIVE, "+1 str, +5 ht" );
-		GLog.p( "Newfound strength surges through your body." );
+		hero.sprite.showStatus(CharSprite.POSITIVE, "+1 str, +5 ht");
+		GLog.p("Neu entdeckte staerke flutet durch deinen Koerper.");
 	}
-	
+
 	@Override
 	public String desc() {
-		return
-			"This powerful liquid will course through your muscles, permanently " +
-			"increasing your strength by one point and health by five points.";
+		return "Diese maechtige Fluessigkeit wird deine Muskeln durchstroemen und erhoet permanent deine Staerke "
+				+ "um einen Punkt und dein Leben um fuenf Punkte.";
 	}
-	
+
 	@Override
 	public int price() {
 		return isKnown() ? 200 * quantity : super.price();

@@ -31,7 +31,7 @@ public class PotionOfInvisibility extends Potion {
 	private static final float ALPHA	= 0.4f;
 	
 	{
-		name = "Unsichtbarkeitsdrank";
+		name = "Unsichtbarkeitstrank";
 	}
 	
 	@Override
@@ -45,7 +45,7 @@ public class PotionOfInvisibility extends Potion {
 	@Override
 	public String desc() {
 		return
-			"Wenn du diesen Drank drinkst wirst du voruebergehend unsichtbar. Waehrend du unsichtbar bist, " +
+			"Wenn du diesen Trank trinkst wirst du voruebergehend unsichtbar. Waehrend du unsichtbar bist, " +
 			"sind Feinde nicht in der Lage, dich zu sehen. Wenn du einen Feind angreifst, einen Zauberstab oder eine Schriftrolle " +
 			"vor den Augen der Feinde benutzt, wird der Effekt aufgehoben.";
 	}

@@ -39,16 +39,16 @@ import com.watabou.utils.Bundle;
 
 public class Potion extends Item {
 	
-	public static final String AC_DRINK	= "DRINKEN";
+	public static final String AC_DRINK	= "TRINKEN";
 	
-	private static final String TXT_HARMFUL		= "Schaedlicher Drank!";
-	private static final String TXT_BENEFICIAL	= "Nuetzlicher Drank";
+	private static final String TXT_HARMFUL		= "Schaedlicher Trank!";
+	private static final String TXT_BENEFICIAL	= "Nuetzlicher Trank";
 	private static final String TXT_YES			= "Ja, ich weiss was ich mache";
 	private static final String TXT_NO			= "Nein, ich habe meine Meinung geaendert";
 	private static final String TXT_R_U_SURE_DRINK = 
-		"Bist du dir sicher, dass du ihn drinken willst? In den meisten Faellen solltest du diesen Drank auf Feinde werfen.";
+		"Bist du dir sicher, dass du ihn trinken willst? In den meisten Faellen solltest du diesen Trank auf Feinde werfen.";
 	private static final String TXT_R_U_SURE_THROW = 
-		"Bist du dir sicher, dass du ihn werfen willst? In den meisten Faellen ist es Sinnvoll ihn zu drinken.";
+		"Bist du dir sicher, dass du ihn werfen willst? In den meisten Faellen ist es Sinnvoll ihn zu trinken.";
 	
 	private static final float TIME_TO_DRINK = 1f;
 	
@@ -250,7 +250,7 @@ public class Potion extends Item {
 		return isKnown() ?
 			desc() :
 			"Diese Flasche enthaelt eine wabernde " + color + " Fluessigkeit. " +
-			"Wer weiss was passiert, wenn du sie drinkst oder wirfst?";
+			"Wer weiss was passiert, wenn du sie trinkst oder wirfst?";
 	}
 	
 	@Override
