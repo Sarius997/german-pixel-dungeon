@@ -20,7 +20,7 @@ package com.sarius.germanpixeldungeon;
 public class ResultDescriptions {
 
 	// Mobs 
-	public static final String MOB	= "Getoeten von %s auf Ebene %d";
+	public static final String MOB	= "Getoetet von %s auf Ebene %d";
 	public static final String BOSS	= "Getoetet von dem %s auf Ebene %d";
 	
 	// Items

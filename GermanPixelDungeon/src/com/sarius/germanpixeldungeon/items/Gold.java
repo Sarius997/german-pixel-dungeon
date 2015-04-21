@@ -35,8 +35,10 @@ import com.watabou.utils.Random;
 public class Gold extends Item {
 
 	private static final String TXT_COLLECT	= "Sammle Goldmuenzen um sie spaeter in Laeden auszugeben.";
-	private static final String TXT_INFO	= "Ein haufen mit %d Goldmuenzen. " + TXT_COLLECT;
-	private static final String TXT_INFO_1	= "Eine Goldmuenze. " + TXT_COLLECT;
+//	private static final String TXT_INFO	= "Ein Haufen mit %d Goldmuenzen. " + TXT_COLLECT;
+	private static final String TXT_INFO	= "Du hast %d Goldmuenzen. " + TXT_COLLECT;
+//	private static final String TXT_INFO_1	= "Eine Goldmuenze. " + TXT_COLLECT;
+	private static final String TXT_INFO_1	= "Du hast eine Goldmuenze. " + TXT_COLLECT;
 	private static final String TXT_VALUE	= "%+d";
 	
 	{

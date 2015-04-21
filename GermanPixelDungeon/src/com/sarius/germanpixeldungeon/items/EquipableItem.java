@@ -28,7 +28,8 @@ public abstract class EquipableItem extends Item {
 
 	private static final String TXT_UNEQUIP_CURSED	= "Du kannst den/die/das verfluchte/n %s nicht ablegen!";
 	
-	public static final String AC_EQUIP		= "AUSRUESTEN";
+//	public static final String AC_EQUIP		= "AUSRUESTEN";
+	public static final String AC_EQUIP		= "ANLEGEN";
 	public static final String AC_UNEQUIP	= "ABLEGEN";
 	
 	@Override

@@ -54,7 +54,7 @@ public class PotionOfHealing extends Potion {
 	@Override
 	public String desc() {
 		return
-			"Ein Elexir, das dich augenblicklich komplett heilt und Gift heilt.";
+			"Ein Elexir, das dich augenblicklich komplett heilt und Vergiftungen entfernt.";
 	}
 	
 	@Override

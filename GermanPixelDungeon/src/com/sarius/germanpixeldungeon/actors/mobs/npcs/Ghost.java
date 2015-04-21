@@ -342,7 +342,7 @@ public class Ghost extends NPC {
 	public static class FetidRat extends Mob {
 
 		{
-			name = "fetid rat";
+			name = "stinkende Ratte";
 			spriteClass = FetidRatSprite.class;
 			
 			HP = HT = 15;

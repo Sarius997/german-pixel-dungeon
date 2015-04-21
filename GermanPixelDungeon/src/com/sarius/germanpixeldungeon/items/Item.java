@@ -57,8 +57,8 @@ public class Item implements Bundlable {
 	protected static final float TIME_TO_PICK_UP	= 1.0f;
 	protected static final float TIME_TO_DROP		= 0.5f;
 	
-	public static final String AC_DROP		= "DROP";
-	public static final String AC_THROW		= "THROW";
+	public static final String AC_DROP		= "FALLEN LASSEN";
+	public static final String AC_THROW		= "WERFEN";
 	
 	public String defaultAction;
 	
