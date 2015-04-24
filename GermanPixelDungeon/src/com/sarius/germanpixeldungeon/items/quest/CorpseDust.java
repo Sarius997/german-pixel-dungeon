@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class CorpseDust extends Item {
 	
 	{
-		name = "corpse dust";
+		name = "Leichenstaub";
 		image = ItemSpriteSheet.DUST;
 		
 		cursed = true;
@@ -45,7 +45,7 @@ public class CorpseDust extends Item {
 	@Override
 	public String info() {
 		return
-			"The ball of corpse dust doesn't differ outwardly from a regular dust ball. However, " +
-			"you know somehow that it's better to get rid of it as soon as possible.";
+			"Dieser Ball aus Leichenstaub unterscheidet sich ausserlich nicht von einem normalen Staubball. Allerdings " +
+			"hast du das Gefuehl, dass es besser ist ihn so schnell wie moeglich loszuwerden.";
 	}
 }

@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class RatSkull extends Item {
 	
 	{
-		name = "giant rat skull";
+		name = "riessiger Rattenschaedel";
 		image = ItemSpriteSheet.SKULL;
 		
 		unique = true;
@@ -42,7 +42,7 @@ public class RatSkull extends Item {
 	@Override
 	public String info() {
 		return
-			"It could be a nice hunting trophy, but it smells too bad to place it on a wall.";
+			"Er koennte eine schoene Jagdtrophaee sein, aber er stinkt zu schlimm, um ihn an eine Wand zu haengen.";
 	}
 	
 	@Override

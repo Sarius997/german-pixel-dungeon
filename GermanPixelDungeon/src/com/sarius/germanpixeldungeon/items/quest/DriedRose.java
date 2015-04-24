@@ -23,7 +23,7 @@ import com.sarius.germanpixeldungeon.sprites.ItemSpriteSheet;
 public class DriedRose extends Item {
 	
 	{
-		name = "dried rose";
+		name = "getrocknete Rose";
 		image = ItemSpriteSheet.ROSE;
 		
 		unique = true;
@@ -42,6 +42,6 @@ public class DriedRose extends Item {
 	@Override
 	public String info() {
 		return
-			"The rose has dried long ago, but it has kept all its petals somehow.";
+			"Diese Rose ist vor langer Zeit ausgetrocknet, aber irgendwie hat sie alle ihre Blaetter behalten.";
 	}
 }

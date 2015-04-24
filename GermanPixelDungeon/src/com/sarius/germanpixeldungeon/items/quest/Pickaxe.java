@@ -41,16 +41,16 @@ import com.watabou.utils.Callback;
 
 public class Pickaxe extends Weapon {
 	
-	public static final String AC_MINE	= "MINE";
+	public static final String AC_MINE	= "ABBAUEN";
 	
 	public static final float TIME_TO_MINE = 2;
 	
-	private static final String TXT_NO_VEIN = "There is no dark gold vein near you to mine";
+	private static final String TXT_NO_VEIN = "Es ist keine dunkle Goldader zum abbauen in der Naehe";
 	
 	private static final Glowing BLOODY = new Glowing( 0x550000 );
 	
 	{
-		name = "pickaxe";
+		name = "Spitzhacke";
 		image = ItemSpriteSheet.PICKAXE;
 		
 		unique = true;
@@ -172,6 +172,6 @@ public class Pickaxe extends Weapon {
 	@Override
 	public String info() {
 		return
-			"This is a large and sturdy tool for breaking rocks. Probably it can be used as a weapon.";
+			"Das ist ein grosses und robustes Werkzeug um Felsen zu zertruemmern. Vielleicht kann sie als Waffe benutzt werden.";
 	}
 }
