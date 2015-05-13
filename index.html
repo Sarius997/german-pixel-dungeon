@@ -14,6 +14,7 @@
 	media="screen">
 <link rel="stylesheet" type="text/css"
 	href="stylesheets/github-light.css" media="screen">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 	<section class="page-header">
@@ -30,9 +31,10 @@
 	<section class="main-content">
 		<select class="languageSelector" id="language" name="language"
 			onchange="changeLanguage()">
-			<option value="">Select Language</option>
-			<option value="en">English</option>
+			<option value="">enable JavaScript to change language</option>
+			<!-- <option value="en">English</option>
 			<option value="de">German</option>
+			-->
 		</select>
 		<h1>
 			<a id="german-pixel-dungeon" class="anchor"
@@ -143,7 +145,7 @@
 
 
 </body>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	var language = navigator.language || navigator.userLanguage;
 	if (language == "de" || language == "de-DE" || language == "de-CH"
 			|| language == "de-AU") {
@@ -181,6 +183,107 @@
 			document.getElementById("footLine").innerHTML = "<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.";
 		}
 	}
+</script>
+-->
+<script>
+	var select = $('#language');
+	select
+			.empty()
+			.append(
+					'<option value="en">English</option><option value="de">German</option>');
+
+	var userLang = navigator.language || navigator.userLanguage;
+	if (userLang == "de" || userLang == "de-DE" || userLang == "de-CH"
+			|| language == "de-AU") {
+		$("#language").val("de");
+		$("#translation")
+				.html(
+						"&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon");
+		$("#googlePlay")
+				.html(
+						"GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin");
+		$("#pd-classes")
+				.html(
+						"PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde");
+		$("#wannaHelp")
+				.html(
+						"Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:sarius997@gmail.com\">sarius997@gmail.com</a> machen.");
+		$("#original").html("<br />das Original: ");
+		$("#footLine")
+				.html(
+						"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+	} else {
+		$("#language").val("en");
+		$("#translation")
+				.html(
+						"Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon");
+		$("#googlePlay")
+				.html(
+						"GooglePlay: will come as soon as I am ready with the translation");
+		$("#pd-classes")
+				.html(
+						"You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder");
+		$("#wannaHelp")
+				.html(
+						"If you want to support me with the translation, you can do this via email to <a href=\"mailto:sarius997@gmail.com\">sarius997@gmail.com</a>.");
+		$("#original").html("<br />the original version: ");
+		$("#footLine")
+				.html(
+						"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+	}
+	$("#language")
+			.change(
+					function(event) {
+						var language = $("#language").val();
+						if (language == "en") {
+							$("#translation")
+									.html(
+											"Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon");
+							$("#googlePlay")
+									.html(
+											"GooglePlay: will come as soon as I am ready with the translation");
+							$("#pd-classes")
+									.html(
+											"You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder");
+							$("#wannaHelp")
+									.html(
+											"If you want to support me with the translation, you can do this via email to <a href=\"mailto:sarius997@gmail.com\">sarius997@gmail.com</a>.");
+							$("#original").html("<br />the original version: ");
+							$("#footLine")
+									.html(
+											"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+						} else if (language == "de") {
+							$("#translation")
+									.html(
+											"&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon");
+							$("#googlePlay")
+									.html(
+											"GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin");
+							$("#pd-classes")
+									.html(
+											"PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde");
+							$("#wannaHelp")
+									.html(
+											"Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:sarius997@gmail.com\">sarius997@gmail.com</a> machen.");
+							$("#original").html("<br />das Original: ");
+							$("#footLine")
+									.html(
+											"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+						}
+
+						var result = 0;
+						var waehrung = "€";
+						if (selected_text == "1") {
+							result = input_value * 1.1250;
+							waehrung = "$";
+						} else if (selected_text == "2") {
+							result = input_value * 0.8862;
+							waehrung = "€";
+						}
+
+						$("#result").html(
+								"Das Ergebnis lautet: " + result + waehrung);
+					});
 </script>
 </html>
 
