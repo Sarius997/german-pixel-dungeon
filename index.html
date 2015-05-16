@@ -1,66 +1,274 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>German Pixel Dungeon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">German Pixel Dungeon</h1>
-      <h2 class="project-tagline">Deutsche Version von Watabou&#39;s Pixel Dungeon / German version of Watabou&#39;s Pixel Dungeon</h2>
-      <a href="https://github.com/Sarius997/german-pixel-dungeon" class="btn">View on GitHub</a>
-      <a href="https://github.com/Sarius997/german-pixel-dungeon/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Sarius997/german-pixel-dungeon/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<head>
+<meta charset="UTF-8">
+<title>German Pixel Dungeon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"
+	media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"
+	media="screen">
+<link rel="stylesheet" type="text/css"
+	href="stylesheets/github-light.css" media="screen">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<section class="page-header">
+		<h1 class="project-name">German Pixel Dungeon</h1>
+		<h2 class="project-tagline">Deutsche Version von Watabou&#39;s
+			Pixel Dungeon / German version of Watabou&#39;s Pixel Dungeon</h2>
+		<a href="https://github.com/Sarius997/german-pixel-dungeon"
+			class="btn">View on GitHub</a> <a
+			href="https://github.com/Sarius997/german-pixel-dungeon/zipball/master"
+			class="btn">Download .zip</a> <a
+			href="https://github.com/Sarius997/german-pixel-dungeon/tarball/master"
+			class="btn">Download .tar.gz</a>
+	</section>
+	<section class="main-content">
+		<select class="languageSelector" id="language" name="language"
+			onchange="changeLanguage()">
+			<option value="">enable JavaScript to change language</option>
+			<!-- <option value="en">English</option>
+			<option value="de">German</option>
+			-->
+		</select>
+		<h1>
+			<a id="german-pixel-dungeon" class="anchor"
+				href="#german-pixel-dungeon" aria-hidden="true"><span
+				class="octicon octicon-link"></span></a>German Pixel Dungeon
+		</h1>
+		<p id="translation">
+			<!-- 
+			&Uuml;bersetzung von <a href="https://github.com/watabou">Watabou</a>&#39;s
+			roguelike Spiel Pixel Dungeon <br />
+			-->
+			Translation of <a href="https://github.com/watabou">Watabou</a>&#39;s
+			roguelike game Pixel Dungeon
+		</p>
 
-    <section class="main-content">
-      <h1>
-<a id="german-pixel-dungeon" class="anchor" href="#german-pixel-dungeon" aria-hidden="true"><span class="octicon octicon-link"></span></a>German Pixel Dungeon</h1>
+		<p id="googlePlay">
+			GooglePlay: will come as soon as I am ready with the translation
+			<!-- 
+			<br /><span style="margin-left: 50px">wird
+				verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin</span><br />
+			
+			<span style="margin-left: 50px;">will come as soon as I am
+				ready with the translation</span>
+				
+				-->
+		</p>
 
-<p>Übersetzung des roguelike Spiels von Watabou</p>
+		<p id="pd-classes">
+			<!-- 
+			PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner
+			eingef&uuml;gt wurde. <br />
+			-->
+			You won&#39;t need PD-Classes to built the game, because it is
+			directly included in the source folder.
+		</p>
 
-<p>GooglePlay:
-noch nicht verfügbar</p>
+		<p id="wannaHelp">
+			<!-- 
+			Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen,
+			k&ouml;nnen Sie dies per Email an <a
+				href="mailto:***REMOVED***">***REMOVED***</a> machen.<br />
+			-->
+			If you want to support me with the translation, you can do this via
+			email to <a href="mailto:***REMOVED***">***REMOVED***</a>.
+		</p>
 
-<p>PD-Classes wird nicht mehr benötigt.
-Es wurde direkt eingebaut.</p>
+		<p id="original">
+			<!-- 
+			<br />das Original: 
+			-->
+			<br />the original version:
+		</p>
 
-<p>das Original:</p>
+		<h1>
+			<a id="pixel-dungeon" class="anchor" href="#pixel-dungeon"
+				aria-hidden="true"><span class="octicon octicon-link"></span></a>Pixel
+			Dungeon
+		</h1>
 
-<h1>
-<a id="pixel-dungeon" class="anchor" href="#pixel-dungeon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pixel Dungeon</h1>
+		<p>Traditional roguelike game with pixel-art graphics and simple
+			interface.</p>
 
-<p>Traditional roguelike game with pixel-art graphics and simple interface.</p>
+		<p>
+			Pixel Dungeon on GooglePlay: <a
+				href="https://play.google.com/store/apps/details?id=com.watabou.pixeldungeon">https://play.google.com/store/apps/details?id=com.watabou.pixeldungeon</a>
+		</p>
 
-<p>Pixel Dungeon on GooglePlay: 
-<a href="https://play.google.com/store/apps/details?id=com.watabou.pixeldungeon">https://play.google.com/store/apps/details?id=com.watabou.pixeldungeon</a></p>
+		<p>
+			Official web-site: <a href="http://pixeldungeon.watabou.ru/">http://pixeldungeon.watabou.ru/</a>
+		</p>
 
-<p>Official web-site: 
-<a href="http://pixeldungeon.watabou.ru/">http://pixeldungeon.watabou.ru/</a></p>
+		<p>
+			Developer's blog: <a href="http://pixeldungeon.tumblr.com/">http://pixeldungeon.tumblr.com/</a>
+		</p>
 
-<p>Developer's blog: 
-<a href="http://pixeldungeon.tumblr.com/">http://pixeldungeon.tumblr.com/</a></p>
+		<p>
+			Source code of the original version: <a
+				href="https://github.com/watabou/pixel-dungeon">https://github.com/watabou/pixel-dungeon</a>
+		</p>
 
-<p>Source code of the original version:
-<a href="https://github.com/watabou/pixel-dungeon">https://github.com/watabou/pixel-dungeon</a></p>
+		<p>
+			To build the game you will need my unnamed game library: <a
+				href="https://github.com/watabou/PD-classes">https://github.com/watabou/PD-classes</a>
+		</p>
 
-<p>To build the game you will need my unnamed game library:
-<a href="https://github.com/watabou/PD-classes">https://github.com/watabou/PD-classes</a></p>
+		<footer class="site-footer">
+			<span class="site-footer-owner" id="footLine"><a
+				href="https://github.com/Sarius997/german-pixel-dungeon">German
+					Pixel Dungeon</a> is maintained and translated by <a
+				href="https://github.com/Sarius997">Sarius997</a>.</span>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Sarius997/german-pixel-dungeon">German Pixel Dungeon</a> is maintained and translated by <a href="https://github.com/Sarius997">Sarius997</a>.</span>
-        <span class="site-footer-owner"><a href="https://github.com/Sarius997/german-pixel-dungeon">German Pixel Dungeon</a> wird gewartet und übersetzt von <a href="https://github.com/Sarius997">Sarius997</a>.</span>
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
 
-    </section>
+			<!-- 
+				<span class="site-footer-owner" id="dontShow"><a
+				href="https://github.com/Sarius997/german-pixel-dungeon">German
+					Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a
+				href="https://github.com/Sarius997">Sarius997</a>.</span>
+				-->
 
-  
-  </body>
+			<span class="site-footer-credits">This page was generated by <a
+				href="https://pages.github.com">GitHub Pages</a> using the <a
+				href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by
+				<a href="https://twitter.com/jasonlong">Jason Long</a>.
+			</span>
+		</footer>
+
+	</section>
+
+
+</body>
+<!-- <script type="text/javascript">
+	var language = navigator.language || navigator.userLanguage;
+	if (language == "de" || language == "de-DE" || language == "de-CH"
+			|| language == "de-AU") {
+		document.getElementById("translation").innerHTML = "&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon";
+		document.getElementById("googlePlay").innerHTML = "GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin";
+		document.getElementById("pd-classes").innerHTML = "PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde";
+		document.getElementById("wannaHelp").innerHTML = "Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:***REMOVED***\">***REMOVED***</a> machen.";
+		document.getElementById("original").innerHTML = "<br />das Original: ";
+		document.getElementById("footLine").innerHTML = "<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.";
+	} else {
+		document.getElementById("translation").innerHTML = "Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon";
+		document.getElementById("googlePlay").innerHTML = "GooglePlay: will come as soon as I am ready with the translation";
+		document.getElementById("pd-classes").innerHTML = "You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder";
+		document.getElementById("wannaHelp").innerHTML = "If you want to support me with the translation, you can do this via email to <a href=\"mailto:***REMOVED***\">***REMOVED***</a>.";
+		document.getElementById("original").innerHTML = "<br />the original version: ";
+		document.getElementById("footLine").innerHTML = "<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.";
+	}
+	document.getElementById("dontShow").innerHTML = "";
+
+	function changeLanguage() {
+		var language = document.getElementById("language").value;
+		if (language == "de") {
+			document.getElementById("translation").innerHTML = "&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon";
+			document.getElementById("googlePlay").innerHTML = "GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin";
+			document.getElementById("pd-classes").innerHTML = "PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde";
+			document.getElementById("wannaHelp").innerHTML = "Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:***REMOVED***\">***REMOVED***</a> machen.";
+			document.getElementById("original").innerHTML = "<br />das Original: ";
+			document.getElementById("footLine").innerHTML = "<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.";
+		} else if (language == "en") {
+			document.getElementById("translation").innerHTML = "Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon";
+			document.getElementById("googlePlay").innerHTML = "GooglePlay: will come as soon as I am ready with the translation";
+			document.getElementById("pd-classes").innerHTML = "You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder";
+			document.getElementById("wannaHelp").innerHTML = "If you want to support me with the translation, you can do this via email to <a href=\"mailto:***REMOVED***\">***REMOVED***</a>.";
+			document.getElementById("original").innerHTML = "<br />the original version: ";
+			document.getElementById("footLine").innerHTML = "<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.";
+		}
+	}
+</script>
+-->
+<script>
+	var select = $('#language');
+	select
+			.empty()
+			.append(
+					'<option value="en">English</option><option value="de">German</option>');
+
+	var userLang = navigator.language || navigator.userLanguage;
+	if (userLang == "de" || userLang == "de-DE" || userLang == "de-CH"
+			|| language == "de-AU") {
+		$("#language").val("de");
+		$("#translation")
+				.html(
+						"&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon");
+		$("#googlePlay")
+				.html(
+						"GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin");
+		$("#pd-classes")
+				.html(
+						"PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde");
+		$("#wannaHelp")
+				.html(
+						"Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:***REMOVED***\">***REMOVED***</a> machen.");
+		$("#original").html("<br />das Original: ");
+		$("#footLine")
+				.html(
+						"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+	} else {
+		$("#language").val("en");
+		$("#translation")
+				.html(
+						"Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon");
+		$("#googlePlay")
+				.html(
+						"GooglePlay: will come as soon as I am ready with the translation");
+		$("#pd-classes")
+				.html(
+						"You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder");
+		$("#wannaHelp")
+				.html(
+						"If you want to support me with the translation, you can do this via email to <a href=\"mailto:***REMOVED***\">***REMOVED***</a>.");
+		$("#original").html("<br />the original version: ");
+		$("#footLine")
+				.html(
+						"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+	}
+	$("#language")
+			.change(
+					function(event) {
+						var language = $("#language").val();
+						if (language == "en") {
+							$("#translation")
+									.html(
+											"Translation of <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike game Pixel Dungeon");
+							$("#googlePlay")
+									.html(
+											"GooglePlay: will come as soon as I am ready with the translation");
+							$("#pd-classes")
+									.html(
+											"You won&#39;t need PD-Classes to built the game, because it is directly included in the source folder");
+							$("#wannaHelp")
+									.html(
+											"If you want to support me with the translation, you can do this via email to <a href=\"mailto:***REMOVED***\">***REMOVED***</a>.");
+							$("#original").html("<br />the original version: ");
+							$("#footLine")
+									.html(
+											"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> is maintained and translated by <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+						} else if (language == "de") {
+							$("#translation")
+									.html(
+											"&Uuml;bersetzung von <a href=\"https://github.com/watabou\">Watabou</a>&#39;s roguelike Spiel Pixel Dungeon");
+							$("#googlePlay")
+									.html(
+											"GoolgePlay: wird verf&uuml;gbar sein, sobald ich mit der &Uuml;bersetzung fertig bin");
+							$("#pd-classes")
+									.html(
+											"PD-Classes wird nicht mehr ben&ouml;tigt, da es in den Source-Ordner eingef&uuml;gt wurde");
+							$("#wannaHelp")
+									.html(
+											"Falls Sie mich bei &Uuml;bersetzung unterst&uuml;zen wollen, k&ouml;nnen Sie dies per Email an <a href=\"mailto:***REMOVED***\">***REMOVED***</a> machen.");
+							$("#original").html("<br />das Original: ");
+							$("#footLine")
+									.html(
+											"<a	href=\"https://github.com/Sarius997/german-pixel-dungeon\">German Pixel Dungeon</a> wird gewartet und &uuml;bersetzt von <a	href=\"https://github.com/Sarius997\">Sarius997</a>.");
+						}
+					});
+</script>
 </html>
 
