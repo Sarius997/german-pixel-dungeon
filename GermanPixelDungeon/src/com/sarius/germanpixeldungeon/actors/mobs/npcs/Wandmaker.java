@@ -70,13 +70,13 @@ public class Wandmaker extends NPC {
 	}
 	
 	private static final String TXT_BERRY1	=
-		"Oh, was für eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
+		"Oh, was fuer eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
 		"einen _Rotberry Samen_. Ich als ein Magier bin dazu in der Lage,  mich  selbst gegen die Monster hier zu verteidigen, " +
 		"aber ich verlaufe mich sehr schnell, das ist sehr peinlich. Vielleicht kannst du mir helfen? Ich wuerde " +
 		"mich freuen, deinen Dienst mit einem meiner besten Zauberstaebe zu bezahlen.";
 	
 	private static final String TXT_DUST1	=
-		"Oh, was für eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
+		"Oh, was fuer eine erfreuliche Ueberraschung, eine ordentliche Person an solch einem Ort zu treffen! Ich kam her um eine seltene Zutat zu suchen - " +
 		"_Leichenstaub_. Er kann aus Skelettresten gewonnen werden und es gibt eine grosse Zahl von ihnen in diesem Verlies. " +
 		"Ich als ein Magier bin dazu in der Lage, mich selbst gegen die Monster hier zu verteidigen, aber ich verlaufe mich schnell, " +
 		"das ist sehr peinlich. Vielleicht kannst du mir helfen? Ich wuerde mich freuen, deinen Dienst mit einem meiner besten Zauberstaebe zu bezahlen.";
